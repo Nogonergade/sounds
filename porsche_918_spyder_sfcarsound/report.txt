@@ -1,0 +1,78 @@
+Car: porsche_918_spyder   FSB mode: 2   samples used: 27
+
+INT ON    : 2957a, 3512a, 7832b, 8518a, 8558a, 9245b, ext_idle_1419, sin5
+INT OFF   : 3472a_off, 3_downshift, 5107a_off, 7104a_off
+EXT ON    : 10884a_front, 1937a_off, 2654a, 3512a, 3896a, 5591a_front, 6116b, 6904b, 8135a, 8620b, 8680b
+EXT OFF   : 1715a_off, 2523b_off, 4582b_off, 8196a_off, 9164a_off
+
+All used: 10884a_front, 1715a_off, 1937a_off, 2523b_off, 2654a, 2957a, 3472a_off, 3512a, 3896a, 3_downshift, 4582b_off, 5107a_off, 5591a_front, 6116b, 6904b, 7104a_off, 7832b, 8135a, 8196a_off, 8518a, 8558a, 8620b, 8680b, 9164a_off, 9245b, ext_idle_1419, sin5
+
+Sprite: porsche_918_spyder_sprite.mp3  (177.4s, 27 segments)
+Peak voices needed: 16 (at 5825rpm, throttle 0.5)  -> recommended voiceCount = 20
+
+[exhaust ON]  throttle: thr 0.09: -42dB -> thr 0.35: -6.4dB -> thr 0.9: +0.4dB
+    layer rpm: 3000rpm: +0dB -> 9200rpm: +0dB -> 9496rpm: -42dB
+    1937a_off          anchor   1937  gain  +0.0dB  in        open  out  1800->2200
+    3512a              anchor   3512  gain  +0.0dB  in  1800->2200  out  3000->5400
+    6904b              anchor   4602  gain  +1.5dB  in  3000->5400  out  5800->6000
+    8680b              anchor   8680  gain  +2.5dB  in  5800->6000  out  7600->7700
+    8620b              anchor   8620  gain  +2.5dB  in  7600->7700  out        open
+
+[exhaust ON]  throttle: thr 0.09: -42dB -> thr 0.42: -5.8dB -> thr 0.76: -3dB -> thr 0.9: -0.2dB
+    layer rpm: 1000rpm: -42dB -> 3000rpm: +0dB -> 9097rpm: +0dB -> 9300rpm: -42dB
+    2654a              anchor   2654  gain  -2.0dB  in        open  out  2000->2600
+    3896a              anchor   3896  gain  -2.5dB  in  2000->2600  out  4200->6200
+    6116b              anchor   6116  gain  +0.0dB  in  4200->6200  out  6200->7200
+    8135a              anchor   8135  gain  +1.5dB  in  6200->7200  out        open
+
+[exhaust ON]  throttle: thr 0.09: -42dB -> thr 0.35: -6.4dB -> thr 0.85: +0dB
+    5591a_front        anchor   5591  gain  -1.5dB  in        open  out  5400->7000
+    10884a_front       anchor  10884  gain  +2.0dB  in  5400->7000  out        open
+
+[exhaust OFF]  throttle: thr 0.1: +0.4dB -> thr 0.46: -4.1dB -> thr 0.86: -42dB
+    1715a_off          anchor   1715  gain  -1.5dB  in        open  out  1400->2000
+    2523b_off          anchor   2523  gain  -6.0dB  in  1400->2000  out  2200->3000
+    4582b_off          anchor   4582  gain  -4.0dB  in  2200->3000  out  3400->5200
+    9164a_off          anchor   9164  gain  +0.0dB  in  3400->5200  out  5800->7000
+    8196a_off          anchor   8196  gain  +0.0dB  in  5800->7000  out 7000->10000
+    9164a_off          anchor   9164  gain  -0.5dB  in 7000->10000  out        open
+
+[interior ON]  throttle: thr 0.08: -42dB -> thr 0.5: -5.3dB -> thr 0.92: +0.4dB
+    layer rpm: 1000rpm: -42dB -> 3000rpm: +0dB -> 9000rpm: +0dB -> 9959rpm: -42dB
+    2957a              anchor   3956  gain  +0.0dB  in        open  out  4200->5800
+    3512a              anchor   7024  gain  +0.0dB  in  4200->5800  out  5800->7300
+    8518a              anchor   8513  gain  +0.0dB  in  5800->7300  out  7400->7800
+    8558a              anchor   8558  gain  +1.5dB  in  7400->7800  out        open
+
+[interior ON]  throttle: thr 0.2: -42dB -> thr 0.6: -3dB -> thr 0.86: +0dB
+    layer rpm: 2000rpm: -42dB -> 4000rpm: +0dB -> 9000rpm: +0dB -> 9574rpm: -42dB
+    7832b              anchor   7832  gain  +5.0dB  in        open  out  5600->6400
+    9245b              anchor   9245  gain  +6.0dB  in  5600->6400  out        open
+
+[interior ON]  throttle: thr 0.08: -4.7dB -> thr 0.8: +0.4dB
+    layer rpm: 2000rpm: +0.4dB -> 4000rpm: -42dB
+    ext_idle_1419      anchor   1917  gain  +2.0dB  in        open  out        open
+
+[interior ON]  throttle: thr 0.1: -4dB -> thr 0.2: -6.4dB -> thr 0.3: -7dB -> thr 0.4: -4.7dB -> thr 0.5: +0dB -> thr 0.7: +0dB
+    layer rpm: 1000rpm: -42dB -> 3000rpm: +0dB -> 5000rpm: +0.4dB -> 7400rpm: -42dB
+    sin5               anchor  10638  gain  -8.0dB  in        open  out        open
+
+[interior OFF]  throttle: thr 0.1: +0.4dB -> thr 0.93: -42dB
+    layer rpm: 600rpm: -42dB -> 2600rpm: -0.2dB
+    3472a_off          anchor   3472  gain  +0.0dB  in        open  out  3000->3800
+    5107a_off          anchor   5107  gain  +1.0dB  in  3000->3800  out  4600->5800
+    7104a_off          anchor   7104  gain  +2.0dB  in  4600->5800  out        open
+
+[interior OFF]  throttle: thr 0.1: -5dB -> thr 0.22: -37.5dB
+    3_downshift        anchor   5450  gain  +0.0dB  in  7400->7800  out        open
+
+[interior OFF]  throttle: thr 0.1: -5dB -> thr 0.22: -37.5dB
+    3_downshift        anchor   5450  gain  -3.0dB  in  6400->7000  out        open
+
+[interior OFF]  throttle: thr 0.1: -5dB -> thr 0.22: -37.5dB
+    3_downshift        anchor   5450  gain  +0.0dB  in  5200->5800  out        open
+
+WARNING: EXT layer 884f32f6: ignored layer curve (param Event Cone Angle)
+WARNING: EXT layer f7b6d9c3: ignored layer curve (param Event Cone Angle)
+WARNING: EXT layer 91e30956: ignored layer curve (param Event Cone Angle)
+WARNING: EXT layer 9b5a9b92: ignored layer curve (param Event Cone Angle)
