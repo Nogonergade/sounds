@@ -1,0 +1,1654 @@
+.page-component-body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.absolutecenter {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 2rem 3rem;
+}
+.absolutecenter.no-margin {
+  margin: 0;
+  padding: 2rem 3rem;
+}
+.no-margin {
+  margin: 0 !important;
+}
+.standardBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.standardBox .label {
+  display: inline;
+  margin-right: 0.5em;
+  text-align: right;
+  font-size: 0.85em;
+  width: 25%;
+}
+.standardBox .value {
+  font-weight: bold;
+  font-size: 1.25em;
+  width: 75%;
+  coh-font-fit-mode: shrink;
+}
+.standardBox > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.standardBox > div:last-child {
+  border: none;
+}
+.largeTimeBoxWithDelta {
+  align-self: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+.largeTimeBoxWithDelta > span {
+  padding: 0.15em;
+}
+.largeTimeBoxWithDelta .value {
+  font-size: 2em;
+  coh-font-fit-mode: shrink;
+  width: 75%;
+  text-align: center;
+  justify-content: center;
+}
+.largeTimeBoxWithDelta .delta {
+  background-color: rgba(0, 0, 0, 0.25);
+  height: 100%;
+  align-items: center;
+  padding: 0 0.5em;
+}
+.centralBox {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0em 4em 4em 4em;
+  text-align: center;
+}
+.centralBox h2 {
+  font-size: 2em;
+}
+.deltaBox {
+  width: 25%;
+  margin-left: 0.25em;
+  coh-font-fit-mode: shrink;
+  font-weight: bold;
+}
+.deltaBox.positive {
+  color: red;
+}
+.deltaBox.negative {
+  color: green;
+}
+.dropBounceBox {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.25s;
+  animation: DropBounce 0.25s ease-out 1;
+}
+.dropCentralBox {
+  visibility: visible;
+  opacity: 1 !important;
+  z-index: 50;
+  animation: SlideLeftBounce 0.25s ease-out 1;
+}
+.dropSlideRightBox {
+  visibility: visible;
+  opacity: 1 !important;
+  z-index: 50;
+  animation: SlideRightBounce 0.25s ease-out 1;
+}
+.roundedPanel {
+  background-color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #90909066;
+}
+.guic-dropdown {
+  font-size: 1.2rem;
+  position: relative;
+  color: #fff;
+}
+.guic-dropdown .guic-dropdown-selected-option,
+.guic-dropdown .guic-dropdown-options {
+  background-color: #000;
+  border: none;
+}
+.guic-dropdown .guic-dropdown-custom-select-arrow {
+  color: #fff;
+}
+.guic-dropdown .guic-dropdown-selected-option {
+  padding: 0.5em 1em;
+  height: auto;
+  font-weight: bold;
+  border: 1px solid #333;
+}
+.guic-dropdown .guic-dropdown-selected-option:hover,
+.guic-dropdown .guic-dropdown-selected-option:focus {
+  background-color: #bd0000;
+  border-color: transparent;
+}
+.guic-dropdown dropdown-option {
+  background-color: #111;
+  padding: 0.5em 1em;
+}
+.guic-dropdown dropdown-option:hover,
+.guic-dropdown dropdown-option.guic-dropdown-option-active {
+  background-color: #bd0000;
+}
+.guic-dropdown .guic-dropdown-options-container {
+  height: auto;
+  max-height: 150px;
+  border: 0;
+  position: absolute;
+  top: 100%;
+  background-color: #313131;
+  border-top: rgba(255, 255, 255, 0.7);
+  z-index: 2;
+}
+.guic-dropdown .guic-dropdown-options-container .guic-dropdown-options {
+  width: auto;
+}
+.guic-checkbox-wrapper .checkbox-background {
+  background-color: red;
+}
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.invisible {
+  opacity: 0;
+}
+.invisible-fade {
+  transition: opacity 0.25s;
+  opacity: 0;
+}
+.is-flex {
+  display: flex;
+}
+.is-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.is-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.prefix-value .value {
+  margin-right: 0.25rem;
+}
+.suffix-value .value {
+  margin-left: 0.25rem;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-1-50 {
+  flex: 1 1 50%;
+}
+.flex-1-0-50 {
+  flex: 1 0 50%;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-start {
+  justify-content: flex-start;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.justify-space-around {
+  justify-content: space-around;
+}
+.display-none {
+  display: none !important;
+}
+.absoluteFullBounds {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.text-85 {
+  font-size: 0.85rem;
+}
+.column-50 {
+  width: 50%;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+hr {
+  display: flex;
+  background-color: #ABA8B280;
+  height: 2px;
+  width: 50%;
+  margin: 0.25rem auto;
+  align-self: center;
+}
+.margin-t05 {
+  margin-top: 0.5rem;
+}
+.margin-b05 {
+  margin-bottom: 0.5rem;
+}
+.margin-t1 {
+  margin-top: 1rem;
+}
+.margin-b1 {
+  margin-bottom: 1rem;
+}
+.margin-v1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.margin-r1 {
+  margin-right: 1rem;
+}
+.margin-l1 {
+  margin-left: 1rem;
+}
+.focus-indicator:hover > .label,
+.focus-indicator.is-focused > .label {
+  background-color: #bd0000;
+}
+.ERROR {
+  color: red !important;
+  background-color: #ff0000aa !important;
+  border: 5px solid red !important;
+}
+.scrollable-horizontal {
+  position: relative;
+}
+.scrollable-horizontal.is-scrolling > * {
+  pointer-events: none;
+}
+.scrollable-horizontal .scrollable-content {
+  flex-direction: row;
+  display: flex;
+  overflow-x: auto;
+  position: relative;
+  width: 100%;
+}
+.scrollable-horizontal .scrollbar {
+  display: flex !important;
+  align-items: center;
+  position: absolute !important;
+  top: auto;
+  bottom: 0.25rem;
+  left: 0 !important;
+  right: 0 !important;
+  height: 0.35rem !important;
+  min-height: 8px;
+  background-color: #111;
+  z-index: 10;
+  visibility: visible !important;
+  opacity: 1 !important;
+  border: 1px solid #000;
+  border-width: 1px 0 1px 0;
+  transition: background-color 0.25s, border-color 0.25s, opacity 0.25s;
+}
+.scrollable-horizontal .scrollbar[disabled] {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+.scrollable-horizontal .scrollbar:hover {
+  background-color: #666;
+  border-color: #333;
+}
+.scrollable-horizontal .scrollbar .thumb {
+  position: relative;
+  background-color: #fff;
+  height: 0.35rem;
+  min-height: 8px;
+  width: 100px;
+  border: 1px solid #000;
+  border-width: 0 1px 0 1px;
+  transition: background-color 0.25s, height 0.25s;
+}
+.scrollable-horizontal .scrollbar .thumb:hover,
+.scrollable-horizontal .scrollbar .thumb.dragging {
+  background-color: #bd0000;
+}
+.scrollable-vertical {
+  position: relative;
+}
+.scrollable-vertical.is-scrolling > * {
+  pointer-events: none !important;
+}
+.scrollable-vertical .scrollable-content {
+  flex-direction: column;
+  display: flex;
+  overflow-y: auto;
+  position: relative;
+  height: 100%;
+}
+.scrollable-vertical .scrollbar {
+  display: flex !important;
+  justify-content: center;
+  position: absolute !important;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  left: auto !important;
+  right: 0.5rem !important;
+  width: 0.35rem !important;
+  min-width: 8px;
+  background-color: #111;
+  z-index: 10;
+  visibility: visible !important;
+  opacity: 1 !important;
+  border: 1px solid #000;
+  border-width: 0 1px 0 1px;
+  transition: background-color 0.25s, border-color 0.25s, opacity 0.25s ease-out;
+}
+.scrollable-vertical .scrollbar[disabled] {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+.scrollable-vertical .scrollbar:hover,
+.scrollable-vertical .scrollbar.dragging {
+  background-color: #222;
+  border-color: #444;
+}
+.scrollable-vertical .scrollbar.dragging .thumb {
+  background-color: #bd0000;
+  pointer-events: none !important;
+}
+.scrollable-vertical .scrollbar .thumb {
+  position: relative;
+  background-color: #fff;
+  width: 0.35rem;
+  min-width: 8px;
+  height: 100px;
+  border: 1px solid #000;
+  border-width: 1px 0 1px 0;
+  transition: background-color 0.25s, height 0.25s;
+}
+.content-scrolling {
+  pointer-events: none !important;
+}
+#acelogo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 11rem;
+  height: 4rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/images/AC2_pos.texture);
+  z-index: 1;
+}
+body {
+  background-color: #3E3C4600;
+  transition: background-color 0.15s ease-out;
+}
+body.opaque,
+body.root-opaque {
+  background-color: #3E3C46C0;
+  transition: background-color 0.15s ease-out;
+}
+body.opaque-90.opaque,
+body.opaque-90.root-opaque {
+  background-color: #3E3C46e6;
+}
+.controltip {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 0.25rem;
+  background-color: #ccc;
+}
+.bold {
+  font-weight: 600;
+}
+/*
+#main-container .tab-selectors {
+    ks-btnbasic {
+        background-color: @bgrSecondary50;
+    }
+}
+    */
+.ingame-permanent {
+  display: flex;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.25s 0.25s;
+  justify-content: center;
+  align-items: center;
+  min-height: 5rem;
+}
+.ingame-permanent > .component-connected {
+  flex-grow: 1;
+  flex-basis: 8rem;
+}
+.ingame-permanent #labelDisconnected {
+  display: none;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 30rem;
+  padding: 0.5rem 1rem;
+  background-color: red;
+  animation-name: glowACRed;
+  animation-direction: alternate;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  pointer-events: none;
+  z-index: 100;
+}
+.ingame-permanent.disconnected > * {
+  display: none !important;
+}
+.ingame-permanent.disconnected #labelDisconnected {
+  display: flex !important;
+}
+.ingame-permanent #serverinfo {
+  display: none;
+  position: absolute;
+  top: 0rem;
+  right: 0;
+}
+.ingame-permanent #sessioninfo {
+  flex-basis: auto;
+  max-width: 14rem;
+  min-width: 12rem;
+}
+.ingame-permanent #waittime,
+.ingame-permanent #nextsession {
+  position: static;
+  flex-basis: auto;
+  max-width: 14rem;
+  min-width: 12rem;
+  margin-left: 1rem;
+}
+.ingame-permanent #waittime .label,
+.ingame-permanent #nextsession .label {
+  font-size: 1rem;
+  color: #FABC3CFF;
+  coh-font-fit-mode: shrink;
+  white-space: nowrap;
+  background-color: #000000C0;
+}
+.ingame-permanent #waittime .value,
+.ingame-permanent #nextsession .value {
+  padding: 0.25rem;
+  font-size: 1.5rem;
+  coh-font-fit-mode: shrink;
+  background-color: #bd0000;
+}
+body.sessioneconomy .ingame-permanent {
+  display: none !important;
+}
+body.ingame.transition .ingame-permanent,
+body.replay.transition .ingame-permanent {
+  opacity: 1;
+}
+body.in-pitlane.viewsettings .ingame-permanent {
+  min-height: 5rem;
+}
+body.in-pitlane .ingame-permanent {
+  min-height: 10rem;
+  padding-right: 1rem;
+}
+body.multiplayer.in-pitlane .ingame-permanent #serverinfo {
+  display: flex;
+}
+body.opaque-90.ingame .ingame-permanent {
+  transition-delay: 0.25s;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes blinkFromOpaque {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blinkAlt {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body[data-page=off] {
+  opacity: 0 !important;
+}
+body.direction-light-right .direction-light-right {
+  display: block !important;
+}
+body.direction-light-left .direction-light-left {
+  display: block !important;
+}
+body.abs-active .abs-active {
+  display: block !important;
+}
+body.tc-active .tc-active {
+  display: block !important;
+}
+body.abs-off .abs-off {
+  display: block !important;
+}
+body.tc-off .tc-off {
+  display: block !important;
+}
+body.low-pressure .low-pressure {
+  display: block !important;
+}
+body.lights-level1 .lights-level1 {
+  display: block !important;
+}
+body.lights-level2 .lights-level2 {
+  display: block !important;
+}
+body.lights-level3 .lights-level3 {
+  display: block !important;
+}
+body.rain-lights .rain-lights {
+  display: block !important;
+}
+body.parking-brake .parking-brake {
+  display: block !important;
+}
+body.pressure-warning .pressure-warning {
+  display: block !important;
+}
+body.xmas-lights .xmas-lights {
+  display: block !important;
+}
+body.esc-off .esc-off {
+  display: block !important;
+}
+body.overheat .overheat {
+  display: block !important;
+}
+body.cold-engine .cold-engine {
+  display: block !important;
+}
+body.low-fuel .low-fuel {
+  display: block !important;
+}
+body.warning-lights .warning-lights {
+  display: block !important;
+}
+body.lights-on .lights-on {
+  display: block !important;
+}
+body.daylight-lights .daylight-lights {
+  display: block !important;
+}
+body.wet-compound .wet-compound {
+  display: block !important;
+}
+body.flashing-lights .lights-level2 {
+  display: block !important;
+  animation-name: flash;
+  animation-duration: 500ms;
+  animation-iteration-count: 3;
+}
+body.flashing-lights .lights-level3 {
+  display: block !important;
+  animation-name: flash;
+  animation-duration: 500ms;
+  animation-iteration-count: 3;
+}
+html {
+  font-size: 14px;
+}
+p {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+body {
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+  font-weight: 400;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+body #locked-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  bottom: 100vh;
+  opacity: 0;
+  overflow: hidden;
+  display: flex;
+  z-index: 5000;
+  background-color: #0006;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 0.25s, bottom 0.25s 0.25s;
+}
+body #locked-overlay > .logo {
+  background-image: url(/images/AC2_pos.texture);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30rem;
+  height: 20rem;
+  top: 23.5rem;
+  position: absolute;
+  animation-name: lockedLogoActivity;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-play-state: paused;
+  z-index: 5;
+}
+body #locked-overlay > .indicator {
+  width: 60rem;
+  height: 60rem;
+  animation-name: lockedIndicatorActivity;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-play-state: paused;
+  background-image: radial-gradient(circle closest-side, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body.spatialnav {
+  pointer-events: none;
+}
+body.ui-locked {
+  content: "disabled";
+}
+body.ui-locked .absolutecenter {
+  filter: saturate(0);
+}
+body.ui-locked #locked-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  bottom: 0vh;
+  opacity: 1;
+  transition: opacity 0.25s;
+  background-color: #3E3C46e6;
+}
+body.ui-locked #locked-overlay .logo {
+  animation-play-state: running;
+}
+body.ui-locked #locked-overlay .indicator {
+  animation-play-state: running;
+}
+body.ui-locked #focusbox {
+  display: none !important;
+}
+body.ui-locked * {
+  content: "disabled";
+}
+body.splash #locked-overlay,
+body.pre-splash #locked-overlay {
+  display: none !important;
+}
+body.splash .absolutecenter,
+body.pre-splash .absolutecenter {
+  filter: none;
+}
+.collapse {
+  display: none;
+}
+.disabled,
+[disabled] {
+  pointer-events: none;
+  opacity: 1;
+  filter: grayscale(1) brightness(0.5);
+  content: 'disabled';
+}
+.pAbsolute {
+  position: absolute;
+}
+.pRelative {
+  position: relative;
+}
+body.loading-transition {
+  transition: opacity 0.5s;
+  opacity: 0;
+  content: 'disabled';
+  pointer-events: none;
+}
+.already-on * {
+  transition-property: none !important;
+  transition-delay: 0s !important;
+  transition-duration: 0s !important;
+}
+@font-face {
+  font-family: 'ks_audi_rs3_fontMain';
+  src: url('fonts/auditype.ttf');
+}
+@font-face {
+  font-family: 'ks_audi_rs3_fontNumerals';
+  src: url('fonts/eurostile_extended_regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'ks_audi_rs3_fontNumerals';
+  src: url('fonts/eurostile_extended_black.ttf');
+  font-weight: 600;
+}
+.gauge {
+  position: absolute;
+}
+body {
+  color: #fff;
+  padding: 0;
+  font-family: 'ks_audi_rs3_fontMain';
+}
+body .page {
+  opacity: 0;
+}
+body #common {
+  position: absolute;
+  color: #fff;
+}
+.loaded #common {
+  opacity: 1;
+  z-index: 1;
+}
+.loaded .overlay,
+.loaded .page {
+  opacity: 1;
+}
+.pAbsolute {
+  position: absolute;
+}
+#common {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#common > div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+#common .icon {
+  background-image: url("images/icons.texture");
+  background-repeat: no-repeat;
+  display: none;
+}
+#common .icon.xmas-lights {
+  background-position: -798px -162px;
+  width: 676px;
+  height: 70px;
+  top: 162px;
+  left: 798px;
+}
+#common .icon.low-fuel {
+  background-position: -1126px -169px;
+  width: 41px;
+  height: 44px;
+  left: 1126px;
+  top: 169px;
+}
+#common .icon.daylight-lights {
+  background-position: -683px -172px;
+  width: 57px;
+  height: 40px;
+  top: 172px;
+  left: 683px;
+}
+#common .icon.lights-level1 {
+  background-position: -550px -173px;
+  width: 60px;
+  height: 42px;
+  top: 173px;
+  left: 683px;
+}
+#common .icon.lights-level2 {
+  background-position: -621px -172px;
+  width: 58px;
+  height: 36px;
+  top: 172px;
+  left: 621px;
+}
+#common .icon.abs-off {
+  background-position: -921px -169px;
+  width: 57px;
+  height: 43px;
+  top: 169px;
+  left: 921px;
+}
+#common .icon.esc-off {
+  color: #f6cb00;
+  top: 172px;
+  left: 986px;
+  font-size: 30px;
+}
+#common .icon.parking-brake {
+  background-position: -860px -169px;
+  width: 57px;
+  height: 43px;
+  top: 169px;
+  left: 860px;
+}
+#common .icon.tc-off {
+  background-position: -1372px -166px;
+  width: 47px;
+  height: 66px;
+  top: 166px;
+  left: 1372px;
+}
+#common .icon.low-pressure {
+  background-position: -1172px -169px;
+  width: 46px;
+  height: 45px;
+  top: 169px;
+  left: 1172px;
+}
+#common .icon.direction-light-left {
+  background-position: -200px -167px;
+  width: 53px;
+  height: 53px;
+  left: 406px;
+  top: 167px;
+  animation: blink 0.5s infinite;
+}
+#common .icon.direction-light-right {
+  background-position: -1792px -167px;
+  width: 53px;
+  height: 53px;
+  left: 1582px;
+  top: 167px;
+  animation: blink 0.5s infinite;
+}
+#common .icon.rain-lights {
+  background-position: -750px -172px;
+  width: 38px;
+  height: 36px;
+  left: 750px;
+  top: 172px;
+}
+#common .power-value,
+#common .torque-value {
+  font-family: 'ks_audi_rs3_fontNumerals';
+  font-size: 65px;
+  text-align: center;
+  width: 164px;
+  top: 527px;
+  z-index: 3;
+}
+#common .power-value {
+  left: 1450px;
+}
+#common .torque-value {
+  left: 1694px;
+}
+#common .torque-bar,
+#common .power-bar {
+  background-position: -1532px -4px;
+  width: 228px;
+  height: 228px;
+  top: 446px;
+  z-index: 2;
+  display: block;
+}
+#common .torque-needle,
+#common .power-needle {
+  width: 114px;
+  height: 4px;
+  background-position: -1810px -116px;
+  transform-origin: 0% 50%;
+  left: 1532px;
+  top: 558px;
+  display: block;
+  z-index: 3;
+}
+#common .torque-needle {
+  left: 1774px;
+}
+#common .power-bar {
+  left: 1419px;
+}
+#common .torque-bar {
+  left: 1662px;
+}
+#common .turbo-bar {
+  display: block;
+  background-position: -1108px -43px;
+  width: 288px;
+  height: 9px;
+  left: 1501px;
+  top: 737px;
+}
+.warning-lights .direction-light-left,
+.warning-lights .direction-light-right {
+  animation-name: blinkAlt !important;
+}
+#gear {
+  font-size: 50px;
+  top: 20px;
+  left: 120px;
+  width: 80px;
+}
+#fuelrange {
+  font-size: 32px;
+  top: 245px;
+  left: 723px;
+  width: 80px;
+  justify-content: flex-end !important;
+}
+#odometer {
+  font-family: 'ks_audi_rs3_fontMain';
+  font-size: 39px;
+  bottom: 234px;
+  left: 791px;
+  width: 110px;
+  justify-content: flex-end !important;
+}
+#temperature {
+  font-family: 'ks_audi_rs3_fontMain';
+  font-size: 39px;
+  bottom: 186px;
+  left: 1101px;
+  width: 110px;
+  justify-content: flex-end !important;
+}
+#trip {
+  font-family: 'ks_audi_rs3_fontMain';
+  font-size: 39px;
+  bottom: 234px;
+  left: 1101px;
+  width: 110px;
+  justify-content: flex-end !important;
+}
+#time {
+  font-family: 'ks_audi_rs3_fontMain';
+  font-size: 39px;
+  bottom: 186px;
+  left: 791px;
+  width: 110px;
+  justify-content: flex-end !important;
+}
+.page {
+  position: absolute;
+  background-position: top left;
+  background-size: contain;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  display: none;
+}
+#mode {
+  position: absolute;
+  background-position: top left;
+  background-size: contain;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  display: none;
+  display: block;
+  z-index: 0;
+}
+#startup {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1000;
+  background-image: url(images/bgr_startup.texture);
+}
+.active {
+  display: block;
+}
+@keyframes rotateneedle {
+  0% {
+    transform: rotateZ(-35deg);
+  }
+  100% {
+    transform: rotateZ(215deg);
+  }
+}
+@keyframes rotateneedleblurred {
+  0% {
+    transform: rotateZ(-35deg);
+    filter: blur(12px);
+  }
+  50% {
+    filter: blur(22px);
+  }
+  100% {
+    transform: rotateZ(215deg);
+    filter: blur(12px);
+  }
+}
+[data-page=startup] {
+  background-image: none;
+}
+[data-page=startup] .page {
+  display: none;
+}
+[data-page=startup] #common,
+[data-page=startup] #startup {
+  display: block;
+}
+[data-page=startup] #sport {
+  display: block;
+}
+[data-page=startup] #sport .rpmneedle,
+[data-page=startup] #sport .speedneedle {
+  transform: rotateZ(-35deg) !important;
+  animation: rotateneedle 0.75s alternate 2 linear;
+}
+[data-page=startup] #sport .rpmneedle.blurred,
+[data-page=startup] #sport .speedneedle.blurred {
+  display: block;
+  animation: rotateneedleblurred 0.75s alternate 2 linear;
+  animation-delay: 0.025s;
+}
+[data-page=startup] .perf-runway {
+  display: none !important;
+}
+.speed {
+  font-size: 85px;
+  font-family: 'ks_audi_rs3_fontNumerals';
+  width: 294px;
+  text-align: center;
+}
+.gear {
+  font-family: 'ks_audi_rs3_fontNumerals';
+  width: 150px;
+  text-align: center;
+  color: #db0101;
+}
+.geardeco {
+  font-family: 'ks_audi_rs3_fontNumerals';
+  font-weight: 400;
+  color: #db0101;
+}
+#sport {
+  background-image: url(images/bgr_sport.texture);
+}
+#sport .speed {
+  top: 462px;
+  left: 1469px;
+}
+#sport .gear {
+  font-size: 66px;
+  left: 355px;
+  top: 614px;
+}
+#sport .geardeco {
+  font-size: 49px;
+  top: 623px;
+  left: 343px;
+  letter-spacing: 53px;
+}
+#sport .rpmneedle,
+#sport .speedneedle {
+  position: absolute;
+  background-image: url(images/icons.texture);
+  background-position: -122px -33px;
+  width: 147px;
+  height: 16px;
+  transform-origin: 317px 8px 0px;
+  transform: rotateZ(-35deg);
+  transition: transform 0.15s;
+  top: 517px;
+}
+#sport .rpmneedle.blurred,
+#sport .speedneedle.blurred {
+  display: none;
+}
+#sport .rpmneedle {
+  width: 147px;
+  height: 16px;
+  left: 116px;
+}
+#sport .speedneedle {
+  left: 1300px;
+}
+#sport .fuelbar {
+  position: absolute;
+  background-image: url(images/icons.texture);
+  background-position: -320px -33px;
+  width: 224px;
+  height: 10px;
+  left: 320px;
+  top: 524px;
+}
+#sport .time {
+  left: 800px;
+  top: 435px;
+  font-size: 65px;
+  width: 460px;
+  text-align: center;
+}
+#sport .date {
+  left: 800px;
+  top: 515px;
+  font-size: 41px;
+  width: 460px;
+  text-align: center;
+}
+#sport .perfmode {
+  display: none;
+  font-family: 'ks_audi_rs3_fontNumerals';
+  color: red;
+  font-size: 22px;
+  left: 326px;
+  top: 682px;
+  width: 210px;
+  text-align: center;
+}
+#performance {
+  background-image: url("images/bgr_performance.texture");
+  background-repeat: no-repeat;
+}
+#performance .rpm {
+  left: 715px;
+  top: 395px;
+  width: 571px;
+  height: 283px;
+  z-index: 2;
+  mask-image: url("images/masks.texture");
+  mask-position: -721px -180px;
+  background-position: -283px -180px;
+}
+#performance .rpm .bar {
+  background-image: url("images/icons.texture");
+  background-repeat: no-repeat;
+  background-position: -1354px -278px;
+  width: 100%;
+  height: 100%;
+  mask-image: url("images/masks.texture");
+  mask-position: -885px -619px;
+}
+#performance .rpm .needle {
+  background-image: url("images/icons.texture");
+  background-repeat: no-repeat;
+  background-position: -1773px -616px;
+  width: 233px;
+  height: 405px;
+  left: 553px;
+  top: 0px;
+}
+#performance .shift-up {
+  background-image: url("images/icons.texture");
+  background-repeat: no-repeat;
+  background-position: -982px -750px;
+  width: 649px;
+  height: 268px;
+  left: 726px;
+  top: 411px;
+  display: none;
+  animation: blinkFromOpaque;
+  animation-delay: 0.5s;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+}
+#performance .shift {
+  background-image: url("images/icons.texture");
+  background-repeat: no-repeat;
+  background-position: -718px -761px;
+  width: 227px;
+  height: 47px;
+  left: 1050px;
+  top: 411px;
+  mask-image: url("images/masks.texture");
+  mask-position: -1710px -193px;
+}
+#performance .shift-label {
+  background-image: url("images/icons.texture");
+  background-repeat: no-repeat;
+  background-position: -1458px -714px;
+  width: 132px;
+  height: 15px;
+  left: 1202px;
+  top: 435px;
+  display: none;
+}
+#performance .speed {
+  left: 959px;
+  top: 477px;
+  width: 250px;
+  text-align: center;
+  font-size: 85px;
+}
+#performance .gear {
+  left: 959px;
+  top: 597px;
+  width: 250px;
+  text-align: center;
+  font-size: 85px;
+}
+#performance .geardeco {
+  font-size: 59px;
+  top: 611px;
+  left: 976px;
+  letter-spacing: 69px;
+}
+#performance .perfmode {
+  display: none;
+  font-family: 'ks_audi_rs3_fontNumerals';
+  color: red;
+  font-size: 22px;
+  left: 959px;
+  top: 692px;
+  width: 250px;
+  text-align: center;
+}
+#runway {
+  background-image: url("images/bgr_runway.texture");
+  background-repeat: no-repeat;
+}
+#runway .rpm {
+  top: 312px;
+  left: 690px;
+  width: 668px;
+  height: 419px;
+  mask-image: url(images/masks.texture);
+  mask-position: -20px -312px;
+  z-index: 2;
+}
+#runway .rpm .bar {
+  background-image: url("images/icons.texture");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50%;
+  background-position: -20px -312px;
+  border-bottom: 4px solid white;
+}
+#runway .rpm .needle {
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+}
+#runway .shift {
+  background-image: url("images/icons.texture");
+  background-repeat: no-repeat;
+  background-position: -20px -742px;
+  left: 690px;
+  top: 502px;
+  width: 668px;
+  height: 0px;
+  z-index: 1;
+}
+#runway .shift-up {
+  background-image: url("images/icons.texture");
+  background-repeat: no-repeat;
+  background-position: -687px -312px;
+  left: 700px;
+  top: 312px;
+  width: 648px;
+  height: 419px;
+  display: none;
+  animation: blink;
+  animation-duration: 0.15s;
+  animation-iteration-count: infinite;
+}
+#runway .speed {
+  top: 620px;
+  left: 878px;
+}
+#runway .gear {
+  top: 490px;
+  left: 950px;
+  font-size: 85px;
+}
+#runway .geardeco {
+  font-size: 59px;
+  top: 503px;
+  left: 917px;
+  letter-spacing: 69px;
+}
+#runway .perfmode {
+  display: none;
+  font-family: 'ks_audi_rs3_fontNumerals';
+  color: red;
+  font-size: 22px;
+  left: 900px;
+  top: 587px;
+  width: 250px;
+  text-align: center;
+}
+.shift-up .shift-up {
+  display: block !important;
+}
+.shift-up #performance .shift {
+  display: none !important;
+}
+.fuellow-overlay {
+  background-color: rgba(255, 0, 0, 0.25);
+  width: 223px;
+  height: 10px;
+  top: 524px;
+  left: 320px;
+  mix-blend-mode: color-dodge;
+  display: none;
+  z-index: 5;
+}
+.fuellow-overlay.mult {
+  background-color: #ff0000;
+  mix-blend-mode: multiply;
+  width: 224px;
+  height: 15px;
+  top: 519px;
+}
+.low-fuel .fuellow-overlay {
+  display: block;
+}
+#gmeter {
+  background-image: url(images/bgr_display1_page_gmeter.texture);
+}
+#gmeter .gauge {
+  width: 175px;
+  height: 175px;
+  top: 183px;
+  left: 169px;
+}
+#gmeter #dot {
+  top: 70px;
+  left: 70px;
+  width: 32px;
+  height: 32px;
+  background-image: url(images/display1_icons.texture);
+  background-position: -238px -223px;
+  transition: top 0.5s, left 0.5s;
+}
+#gauges .needle,
+#gauges .bar {
+  background-image: url(images/display1_icons.texture);
+}
+#gauges .bar {
+  background-position: -134px -163px;
+  width: 100%;
+  height: 17px;
+}
+#gauges .needle {
+  background-position: -359px -163px;
+  right: 0px;
+  width: 4px;
+  height: 18px;
+}
+#gauges > div {
+  width: 229px;
+  height: 18px;
+  transition: width 0.25s ease-in-out;
+}
+#gauges .oiltemp {
+  top: 163px;
+  left: 134px;
+  width: 119px;
+}
+#gauges .torque {
+  top: 246px;
+  left: 134px;
+}
+#gauges .turbo {
+  top: 329px;
+  left: 134px;
+}
+#info > div {
+  display: simple;
+  position: absolute;
+  text-align: right;
+  color: #fff;
+  font-size: 36px;
+}
+#info .range {
+  top: 209px;
+  right: 180px;
+}
+#info .consumption {
+  top: 262px;
+  right: 202px;
+}
+#info .drivetime {
+  top: 313px;
+  right: 162px;
+}
+.gmeter {
+  left: 352px;
+  top: 472px;
+  width: 136px;
+  height: 136px;
+}
+.gmeter > div {
+  color: white;
+  font-size: 38px;
+  text-align: center;
+  width: 100%;
+}
+.gmeter .dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  border: 2px solid red;
+  background-color: #470900;
+}
+.gmeter .front {
+  top: -58px;
+}
+.gmeter .rear {
+  bottom: -58px;
+}
+.gmeter .left {
+  left: -80px;
+  text-align: left;
+}
+.gmeter .right {
+  right: -80px;
+  text-align: right;
+}
+[data-page=sport] #sport {
+  display: block;
+  opacity: 1;
+}
+[data-page=sport] .perf-runway {
+  display: none !important;
+}
+[data-page=performance] #performance {
+  display: block;
+  opacity: 1;
+}
+[data-page=performance].shift-1 #performance .shift {
+  mask-position: -1665px -193px;
+}
+[data-page=performance].shift-2 #performance .shift {
+  mask-position: -1626px -193px;
+}
+[data-page=performance].shift-3 #performance .shift {
+  mask-position: -1587px -193px;
+}
+[data-page=performance].shift-4 #performance .shift {
+  mask-position: -1547px -193px;
+}
+[data-page=performance].shift-5 #performance .shift {
+  mask-position: -1511px -193px;
+}
+[data-page=performance].shift-4 #performance .shift-label {
+  display: block;
+}
+[data-page=runway] #runway {
+  display: block;
+  opacity: 1;
+}
+[data-page=runway].shift-1 #runway .shift {
+  height: 27px;
+}
+[data-page=runway].shift-2 #runway .shift {
+  height: 56px;
+}
+[data-page=runway].shift-3 #runway .shift {
+  height: 90px;
+}
+[data-page=runway].shift-4 #runway .shift {
+  height: 131px;
+}
+[data-page=runway].shift-5 #runway .shift {
+  height: 178px;
+}
+[data-page=gmeter] #gmeter {
+  display: block;
+  opacity: 1;
+}
+[data-page=gmeter] #popupPage .indicator {
+  top: 21px;
+}
+[data-page=gauges] #gauges {
+  display: block;
+  opacity: 1;
+  background-image: url(images/bgr_display1_page_gauges.texture);
+}
+[data-page=gauges] #popupPage .indicator {
+  top: 42px;
+}
+[data-page=info] #info {
+  display: block;
+  opacity: 1;
+  background-image: url(images/bgr_display1_page_info.texture);
+}
+[data-page=info] #popupPage .indicator {
+  top: 63px;
+}
+[data-page=tyres] #tyres {
+  display: block;
+  opacity: 1;
+  background-image: url(images/bgr_display1_page_tyres.texture);
+}
+[data-page=tyres] #popupPage .indicator {
+  top: 90px;
+}
+[data-mode=dynamic] .perfmode.dynamic {
+  display: block !important;
+}
+[data-mode=track] .perfmode.track {
+  display: block !important;
+}
+[data-mode=drift] .perfmode.drift {
+  display: block !important;
+}
+[data-gear-int="0"] .geardeco,
+[data-gear-int="1"] .geardeco {
+  display: none;
+}
+[data-gear-int="0"] .gear,
+[data-gear-int="1"] .gear {
+  color: white;
+}
+[data-gear-int="0"] .shift,
+[data-gear-int="1"] .shift,
+[data-gear-int="0"] .shift-up,
+[data-gear-int="1"] .shift-up,
+[data-gear-int="0"] .shift-label,
+[data-gear-int="1"] .shift-label {
+  display: none !important;
+}
+[data-gear-int="8"] .shift,
+[data-gear-int="8"] .shift-up,
+[data-gear-int="8"] .shift-label {
+  display: none !important;
+}
+.stopped .gmeter > div {
+  color: red !important;
+}
+.xmas-lights .esc-off.icon {
+  display: none !important;
+}
+.lights-on .daylight-lights.icon {
+  display: none !important;
+}
+.flashing-lights .daylight-lights.icon,
+.flashing-lights .lights-level1.icon {
+  display: none !important;
+}
+.already-on * {
+  transition-delay: 0s !important;
+  transition-duration: 0s !important;
+}

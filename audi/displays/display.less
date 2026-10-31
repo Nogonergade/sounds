@@ -1,0 +1,1111 @@
+// out: "display.css"
+@import url(common.less);
+
+body {
+    //background-color: #000;
+    //background-image: url(images/bgr_display1.texture);
+
+    color: #fff;
+    padding: 0;
+    font-family: @mainFont;
+
+
+
+    .page {
+
+        opacity: 0;
+    }
+
+    #common {
+        position: absolute;
+
+        color: #fff;
+
+    }
+}
+
+&.loaded {
+
+    //    .loading {
+    //    opacity: 0;
+    //transition: opacity 0.25s ease-in 1.75s;
+    //  }
+
+
+    #common {
+        //transition: opacity 0.5s ease-out 1.25s;
+        opacity: 1;
+        z-index: 1;
+        // animation: VerticalWipeBounce 0.5s ease-in-out 1;
+        // animation-delay: 1.5s;
+    }
+
+    .overlay,
+    .page {
+        //transition: opacity 0.5s ease-out 2s;
+        opacity: 1;
+    }
+}
+
+.pAbsolute {
+    position: absolute;
+}
+
+#common {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    //z-index: 10;
+
+    >div {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        .setBackground("icons.texture");
+        display: none;
+
+        &.xmas-lights {
+            background-position: -798px -162px;
+            width: 676px;
+            height: 70px;
+            top: 162px;
+            left: 798px;
+        }
+
+        &.low-fuel {
+            background-position: -1126px -169px;
+            width: 41px;
+            height: 44px;
+            left: 1126px;
+            top: 169px;
+        }
+
+        &.daylight-lights {
+            background-position: -683px -172px;
+            width: 57px;
+            height: 40px;
+            top: 172px;
+            left: 683px;
+        }
+
+        &.lights-level1 {
+            background-position: -550px -173px;
+            width: 60px;
+            height: 42px;
+            top: 173px;
+            left: 683px;
+        }
+
+        &.lights-level2 {
+            background-position: -621px -172px;
+            width: 58px;
+            height: 36px;
+            top: 172px;
+            left: 621px;
+        }
+
+        &.abs-off {
+            background-position: -921px -169px;
+            width: 57px;
+            height: 43px;
+            top: 169px;
+            left: 921px;
+        }
+
+        &.esc-off {
+            color: #f6cb00;
+            top: 172px;
+            left: 986px;
+            font-size: 30px;
+        }
+
+        &.parking-brake {
+            background-position: -860px -169px;
+            width: 57px;
+            height: 43px;
+            top: 169px;
+            left: 860px;
+        }
+
+        &.tc-off {
+            background-position: -1372px -166px;
+            width: 47px;
+            height: 66px;
+            top: 166px;
+            left: 1372px;
+        }
+
+        &.low-pressure {
+            background-position: -1172px -169px;
+            width: 46px;
+            height: 45px;
+            top: 169px;
+            left: 1172px;
+        }
+
+        &.direction-light-left {
+            background-position: -200px -167px;
+            width: 53px;
+            height: 53px;
+            left: 406px;
+            top: 167px;
+            .blinking();
+        }
+
+        &.direction-light-right {
+            background-position: -1792px -167px;
+            width: 53px;
+            height: 53px;
+            left: 1582px;
+            top: 167px;
+            .blinking();
+        }
+
+        &.rain-lights {
+            background-position: -750px -172px;
+            width: 38px;
+            height: 36px;
+            left: 750px;
+            top: 172px;
+        }
+
+    }
+
+    .power-value,
+    .torque-value {
+        font-family: @numeralsFont;
+        font-size: 65px;
+        text-align: center;
+        width: 164px;
+        top: 527px;
+        z-index: 3;
+    }
+
+    .power-value {
+        left: 1450px;
+    }
+
+    .torque-value {
+        left: 1694px;
+    }
+
+    .torque-bar,
+    .power-bar {
+        background-position: -1532px -4px;
+        width: 228px;
+        height: 228px;
+        top: 446px;
+        z-index: 2;
+        display: block;
+    }
+
+    .torque-needle,
+    .power-needle {
+        width: 114px;
+        height: 4px;
+        background-position: -1810px -116px;
+        transform-origin: 0% 50%;
+        //background-color: blue;
+        left: 1532px;
+        top: 558px;
+        display: block;
+        z-index: 3;
+    }
+
+    .torque-needle {
+        left: 1774px;
+    }
+
+
+    .power-bar {
+        left: 1419px;
+    }
+
+    .torque-bar {
+        left: 1662px;
+    }
+
+    .turbo-bar {
+        display: block;
+        background-position: -1108px -43px;
+        width: 288px;
+        height: 9px;
+        left: 1501px;
+        top: 737px;
+    }
+}
+
+
+&.warning-lights {
+
+    .direction-light-left,
+    .direction-light-right {
+        animation-name: blinkAlt !important;
+
+    }
+}
+
+#gear {
+    font-size: 50px;
+    top: 20px;
+    left: 120px;
+    width: 80px;
+
+}
+
+#fuelrange {
+    font-size: 32px;
+    top: 245px;
+    left: 723px;
+    width: 80px;
+    justify-content: flex-end !important;
+
+}
+
+#odometer {
+    font-family: @mainFont;
+    font-size: 39px;
+    bottom: 234px;
+    left: 791px;
+    width: 110px;
+    justify-content: flex-end !important;
+}
+
+#temperature {
+    font-family: @mainFont;
+    font-size: 39px;
+    bottom: 186px;
+    left: 1101px;
+    width: 110px;
+    justify-content: flex-end !important;
+}
+
+#trip {
+    font-family: @mainFont;
+    font-size: 39px;
+    bottom: 234px;
+    left: 1101px;
+    width: 110px;
+    justify-content: flex-end !important;
+}
+
+#time {
+    font-family: @mainFont;
+    font-size: 39px;
+    bottom: 186px;
+    left: 791px;
+    width: 110px;
+    justify-content: flex-end !important;
+}
+
+.page {
+    position: absolute;
+    background-position: top left;
+    background-size: contain;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: none;
+}
+
+#mode {
+    .page;
+    display: block;
+
+    z-index: 0;
+}
+
+#startup {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+
+
+    z-index: 1000;
+    //opacity: 0;
+    //transition: opacity 0.25s;
+    background-image: url(images/bgr_startup.texture);
+}
+
+.active {
+    display: block;
+}
+
+@keyframes rotateneedle {
+    0% {
+        transform: rotateZ(-35deg);
+
+    }
+
+    100% {
+
+        transform: rotateZ(215deg);
+
+    }
+}
+
+@keyframes rotateneedleblurred {
+    0% {
+        transform: rotateZ(-35deg);
+        filter: blur(12px);
+
+    }
+
+    50% {
+
+        filter: blur(22px);
+    }
+
+    100% {
+
+        transform: rotateZ(215deg);
+        filter: blur(12px);
+    }
+}
+
+&[data-page=startup] {
+
+    background-image: none;
+
+    .page {
+        display: none;
+    }
+
+    #common,
+    #startup {
+        display: block;
+        //opacity: 1;
+        //transition: opacity 0s;
+    }
+
+    #sport {
+        display: block;
+
+        .rpmneedle,
+        .speedneedle {
+            transform: rotateZ(-35deg) !important;
+            animation: rotateneedle 0.75s alternate 2 linear;
+            //transform: rotateZ(215deg) !important;
+
+            &.blurred {
+                display: block;
+                animation: rotateneedleblurred 0.75s alternate 2 linear;
+                animation-delay: 0.025s;
+            }
+        }
+
+
+    }
+
+    .perf-runway {
+        display: none !important;
+    }
+}
+
+.speed {
+    font-size: 85px;
+    font-family: @numeralsFont;
+    width: 294px;
+    text-align: center;
+}
+
+.gear {
+    font-family: @numeralsFont;
+    width: 150px;
+    text-align: center;
+    color: #db0101;
+}
+
+.geardeco {
+    font-family: @numeralsFont;
+    font-weight: 400;
+    color: #db0101;
+}
+
+#sport {
+
+    background-image: url(images/bgr_sport.texture);
+
+    .speed {
+        top: 462px;
+        left: 1469px;
+    }
+
+    .gear {
+        font-size: 66px;
+        left: 355px;
+        top: 614px;
+    }
+
+
+    .geardeco {
+        font-size: 49px;
+        top: 623px;
+        left: 343px;
+        letter-spacing: 53px;
+    }
+
+    .rpmneedle,
+    .speedneedle {
+        position: absolute;
+        background-image: url(images/icons.texture);
+        background-position: -122px -33px;
+        width: 147px;
+        height: 16px;
+        transform-origin: 317px 8px 0px;
+        transform: rotateZ(-35deg); // 215 max
+        transition: transform 0.15s;
+        top: 517px;
+
+        &.blurred {
+            display: none;
+        }
+    }
+
+    .rpmneedle {
+        width: 147px;
+        height: 16px;
+        left: 116px;
+    }
+
+    .speedneedle {
+        left: 1300px;
+    }
+
+    .fuelbar {
+        position: absolute;
+        background-image: url(images/icons.texture);
+        background-position: -320px -33px;
+        width: 224px;
+        height: 10px;
+        left: 320px;
+        top: 524px;
+    }
+
+    .time {
+        left: 800px;
+        top: 435px;
+        font-size: 65px;
+
+        width: 460px;
+        text-align: center;
+    }
+
+    .date {
+        left: 800px;
+        top: 515px;
+        font-size: 41px;
+
+        width: 460px;
+        text-align: center;
+    }
+
+    .perfmode {
+        display: none;
+        font-family: @numeralsFont;
+        color: red;
+        font-size: 22px;
+        left: 326px;
+        top: 682px;
+        width: 210px;
+        text-align: center;
+    }
+}
+
+#performance {
+    .setBackground("bgr_performance.texture");
+
+    .rpm {
+        left: 715px;
+        top: 395px;
+        width: 571px;
+        height: 283px;
+        z-index: 2;
+
+
+        mask-image: url("images/masks.texture");
+        mask-position: -721px -180px;
+        background-position: -283px -180px;
+
+        .bar {
+            .setBackground("icons.texture");
+            background-position: -1354px -278px;
+            width: 100%;
+            height: 100%;
+
+            mask-image: url("images/masks.texture");
+            mask-position: -885px -619px;
+        }
+
+        .needle {
+            .setBackground("icons.texture");
+            background-position: -1773px -616px;
+            width: 233px;
+            height: 405px;
+            left: 553px;
+            top: 0px;
+        }
+    }
+
+    .shift-up {
+        .setBackground("icons.texture");
+        background-position: -982px -750px;
+        width: 649px;
+        height: 268px;
+        left: 726px;
+        top: 411px;
+        display: none;
+        animation: blinkFromOpaque;
+        animation-delay: 0.5s;
+        animation-duration: 0.75s;
+        animation-iteration-count: infinite;
+
+    }
+
+    .shift {
+        .setBackground("icons.texture");
+        background-position: -718px -761px;
+        width: 227px;
+        height: 47px;
+        left: 1050px;
+        top: 411px;
+        mask-image: url("images/masks.texture");
+        mask-position: -1710px -193px;
+
+    }
+
+    .shift-label {
+        .setBackground("icons.texture");
+        background-position: -1458px -714px;
+        width: 132px;
+        height: 15px;
+        left: 1202px;
+        top: 435px;
+        display: none;
+    }
+
+    .speed {
+        left: 959px;
+        top: 477px;
+        width: 250px;
+        text-align: center;
+        font-size: 85px;
+    }
+
+    .gear {
+        left: 959px;
+        top: 597px;
+        width: 250px;
+        text-align: center;
+        font-size: 85px;
+    }
+
+
+    .geardeco {
+        font-size: 59px;
+        top: 611px;
+        left: 976px;
+        letter-spacing: 69px;
+    }
+
+    .perfmode {
+        display: none;
+        font-family: @numeralsFont;
+        color: red;
+        font-size: 22px;
+        left: 959px;
+        top: 692px;
+        width: 250px;
+        text-align: center;
+    }
+
+}
+
+#runway {
+    .setBackground("bgr_runway.texture");
+
+    .rpm {
+        top: 312px;
+        left: 690px;
+        width: 668px;
+        height: 419px;
+
+        mask-image: url(images/masks.texture);
+        mask-position: -20px -312px;
+
+        z-index: 2;
+        //background-color: blue;
+
+
+
+        .bar {
+            .setBackground("icons.texture");
+            width: 100%;
+            height: 50%;
+
+            background-position: -20px -312px;
+            border-bottom: 4px solid white;
+        }
+
+        .needle {
+            width: 100%;
+            height: 5px;
+            background-color: #fff;
+        }
+
+
+    }
+
+    .shift {
+        .setBackground("icons.texture");
+        background-position: -20px -742px;
+        left: 690px;
+        top: 502px;
+
+        width: 668px;
+        height: 0px;
+        z-index: 1;
+    }
+
+    .shift-up {
+        .setBackground("icons.texture");
+        background-position: -687px -312px;
+
+        left: 700px;
+        top: 312px;
+
+        width: 648px;
+        height: 419px;
+        display: none;
+
+        animation: blink;
+        animation-duration: 0.15s;
+        animation-iteration-count: infinite;
+
+    }
+
+    .speed {
+        top: 620px;
+        left: 878px;
+    }
+
+    .gear {
+        top: 490px;
+        left: 950px;
+        font-size: 85px;
+    }
+
+    .geardeco {
+
+        font-size: 59px;
+        top: 503px;
+        left: 917px;
+        letter-spacing: 69px;
+    }
+
+    .perfmode {
+        display: none;
+        font-family: @numeralsFont;
+        color: red;
+        font-size: 22px;
+        left: 900px;
+        top: 587px;
+        width: 250px;
+        text-align: center;
+    }
+}
+
+
+&.shift-up {
+    .shift-up {
+        display: block !important;
+    }
+
+    #performance {
+        .shift {
+            display: none !important;
+        }
+    }
+}
+
+.fuellow-overlay {
+    background-color: rgba(255, 0, 0, 0.25);
+    width: 223px;
+    height: 10px;
+    top: 524px;
+    left: 320px;
+    mix-blend-mode: color-dodge;
+    display: none;
+    z-index: 5;
+
+    &.mult {
+        background-color: rgba(255, 0, 0, 1);
+        mix-blend-mode: multiply;
+        width: 224px;
+        height: 15px;
+        top: 519px;
+    }
+}
+
+&.low-fuel {
+    .fuellow-overlay {
+        display: block;
+    }
+
+    .fuelbar {}
+}
+
+#gmeter {
+    background-image: url(images/bgr_display1_page_gmeter.texture);
+
+    .gauge {
+        width: 175px;
+        height: 175px;
+        top: 183px;
+        left: 169px;
+    }
+
+    #dot {
+        top: 70px;
+        left: 70px;
+        width: 32px;
+        height: 32px;
+        background-image: url(images/display1_icons.texture);
+        background-position: -238px -223px;
+        transition: top 0.5s, left 0.5s;
+    }
+
+
+}
+
+#gauges {
+
+    .needle,
+    .bar {
+        background-image: url(images/display1_icons.texture);
+    }
+
+    .bar {
+        background-position: -134px -163px;
+        width: 100%;
+        height: 17px;
+    }
+
+    .needle {
+        background-position: -359px -163px;
+        right: 0px;
+        width: 4px;
+        height: 18px;
+    }
+
+    >div {
+        width: 229px;
+        height: 18px;
+        transition: width 0.25s ease-in-out;
+    }
+
+    .oiltemp {
+        top: 163px;
+        left: 134px;
+        width: 119px;
+    }
+
+    .torque {
+        top: 246px;
+        left: 134px;
+    }
+
+    .turbo {
+        top: 329px;
+        left: 134px;
+    }
+
+}
+
+#info {
+    >div {
+        display: simple;
+        position: absolute;
+        text-align: right;
+        color: #fff;
+        font-size: 36px;
+
+    }
+
+    .range {
+        top: 209px;
+        right: 180px;
+    }
+
+    .consumption {
+        top: 262px;
+        right: 202px;
+    }
+
+    .drivetime {
+        top: 313px;
+        right: 162px;
+    }
+}
+
+.gmeter {
+
+    left: 352px;
+    top: 472px;
+    width: 136px;
+    height: 136px;
+
+    >div {
+        color: white;
+        font-size: 38px;
+        text-align: center;
+        width: 100%;
+        ;
+    }
+
+    .dot {
+        // left: 70px;
+        // top: 70px;
+        width: 24px;
+        height: 24px;
+        border-radius: 12px;
+        border: 2px solid red;
+        background-color: #470900;
+    }
+
+    .front {
+        top: -58px;
+    }
+
+    .rear {
+        bottom: -58px;
+    }
+
+    .left {
+        left: -80px;
+        text-align: left;
+    }
+
+    .right {
+        right: -80px;
+        text-align: right;
+    }
+
+}
+
+&[data-page=sport] {
+    #sport {
+        display: block;
+        opacity: 1;
+    }
+
+    .perf-runway {
+        display: none !important;
+    }
+}
+
+&[data-page=performance] {
+    #performance {
+        display: block;
+        opacity: 1;
+    }
+
+    &.shift-1 #performance .shift {
+        mask-position: -1665px -193px;
+    }
+
+    &.shift-2 #performance .shift {
+        mask-position: -1626px -193px;
+    }
+
+    &.shift-3 #performance .shift {
+        mask-position: -1587px -193px;
+    }
+
+    &.shift-4 #performance .shift {
+        mask-position: -1547px -193px;
+    }
+
+    &.shift-5 #performance .shift {
+        mask-position: -1511px -193px;
+    }
+
+    &.shift-4 #performance .shift-label {
+        display: block;
+    }
+}
+
+&[data-page=runway] {
+    #runway {
+        display: block;
+        opacity: 1;
+    }
+
+    &.shift-1 #runway .shift {
+        height: 27px;
+    }
+
+    &.shift-2 #runway .shift {
+        height: 56px;
+    }
+
+    &.shift-3 #runway .shift {
+        height: 90px;
+    }
+
+    &.shift-4 #runway .shift {
+        height: 131px;
+    }
+
+    &.shift-5 #runway .shift {
+        height: 178px;
+    }
+
+
+}
+
+&[data-page=gmeter] {
+    #gmeter {
+        display: block;
+        opacity: 1;
+
+    }
+
+    #popupPage .indicator {
+        top: 21px;
+    }
+
+}
+
+&[data-page=gauges] {
+    #gauges {
+        display: block;
+        opacity: 1;
+        background-image: url(images/bgr_display1_page_gauges.texture);
+    }
+
+    #popupPage .indicator {
+        top: 42px;
+    }
+
+}
+
+&[data-page=info] {
+    #info {
+        display: block;
+        opacity: 1;
+        background-image: url(images/bgr_display1_page_info.texture);
+    }
+
+    #popupPage .indicator {
+        top: 63px;
+    }
+}
+
+&[data-page=tyres] {
+    #tyres {
+        display: block;
+        opacity: 1;
+        background-image: url(images/bgr_display1_page_tyres.texture);
+    }
+
+    #popupPage .indicator {
+        top: 90px;
+    }
+}
+
+&[data-mode=dynamic] {
+    .perfmode.dynamic {
+        display: block !important;
+    }
+}
+
+&[data-mode=track] {
+    .perfmode.track {
+        display: block !important;
+    }
+}
+
+&[data-mode=drift] {
+    .perfmode.drift {
+        display: block !important;
+    }
+}
+
+&[data-gear-int="0"],
+&[data-gear-int="1"] {
+    .geardeco {
+        display: none;
+    }
+
+    .gear {
+        color: white;
+    }
+
+    .shift,
+    .shift-up,
+    .shift-label {
+        display: none !important;
+    }
+}
+
+&[data-gear-int="8"] {
+
+    .shift,
+    .shift-up,
+    .shift-label {
+        display: none !important;
+    }
+}
+
+
+&.shift-up {
+    #runway .shift-up {}
+}
+
+&.stopped {
+    .gmeter>div {
+        color: red !important;
+
+    }
+}
+
+&.xmas-lights {
+
+    .esc-off.icon {
+        display: none !important;
+    }
+}
+
+&.lights-on {
+    .daylight-lights.icon {
+        display: none !important;
+    }
+
+}
+
+&.flashing-lights {
+
+    .daylight-lights.icon,
+    .lights-level1.icon {
+        display: none !important;
+        ;
+    }
+}
+
+&.already-on {
+    * {
+        transition-delay: 0s !important;
+        transition-duration: 0s !important;
+    }
+
+}

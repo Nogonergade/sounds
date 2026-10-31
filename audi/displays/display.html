@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src='../../common_assets/displays/js/cohtml.js'></script>
+    <script src='../../common_assets/displays/js/displays.js'></script>
+
+    <link rel='stylesheet' type='text/css' href='../../common_assets/displays/css/common.css'>
+    <link rel='stylesheet' type='text/css' href='display.css'>
+
+    <script src='display.js'></script>
+</head>
+
+<body class="cardisplay"
+    data-mode="off"
+    data-page="off"
+    data-bind-car="CarDisplay.process({{ModelCurrentCar}})">
+
+
+    <div id="common">
+        <div id="fuelrange" class="pAbsolute" data-bind-value="Math.round({{ModelCurrentCar}}.fuel_liter_current_quantity * 8)">
+            100
+        </div>
+
+        <div id="temperature" class="pAbsolute" data-bind-value="{{ModelCurrentCar.air_temperature_c}}">26</div>
+
+        <div id="trip" class="pAbsolute">0</div>
+
+        <div id="odometer" class="pAbsolute" data-bind-value="{{ModelCurrentCar.total_km}}">
+            N
+        </div>
+
+        <div id="time" class="pAbsolute" data-bind-value="CarDisplay.convert.timeOfDayToTime({{ModelCurrentCar}})"></div>
+
+        <div class="xmas-lights pAbsolute icon"></div>
+        <div class="low-fuel pAbsolute icon"></div>
+        <div class="daylight-lights pAbsolute icon"></div>
+        <div class="lights-level1 pAbsolute icon"></div>
+        <div class="lights-level2 pAbsolute icon"></div>
+        <div class="abs-off pAbsolute icon"></div>
+        <div class="parking-brake pAbsolute icon"></div>
+        <div class="low-pressure pAbsolute icon"></div>
+        <div class="tc-off pAbsolute icon"></div>
+        <div class="direction-light-right pAbsolute icon"></div>
+        <div class="direction-light-left pAbsolute icon"></div>
+        <div class="esc-off pAbsolute icon">ESC OFF</div>
+        <!-- <div class="rain-lights pAbsolute icon"></div> -->
+
+        <div class="perf-runway power-value pAbsolute" data-bind-value="CarDisplay.delayValue(Math.min(Math.round(({{ModelCurrentCar}}.current_bhp / CarDisplay.maxbhp) * 100), 100), 1, 150)">100</div>
+        <div class="perf-runway torque-value pAbsolute" data-bind-value="CarDisplay.delayValue(Math.min(Math.round(({{ModelCurrentCar}}.current_torque / CarDisplay.maxtorque) * 100), 100), 2, 150)">100</div>
+
+        <div class="perf-runway power-bar icon pAbsolute"></div>
+        <div class="perf-runway power-needle icon pAbsolute"></div>
+
+        <div class="perf-runway torque-bar icon pAbsolute"></div>
+        <div class="perf-runway torque-needle icon pAbsolute"></div>
+
+        <div class="perf-runway gauge gmeter">
+            <div class="dot pAbsolute"></div>
+            <div class="front pAbsolute"></div>
+            <div class="rear pAbsolute"></div>
+            <div class="left pAbsolute"></div>
+            <div class="right pAbsolute"></div>
+        </div>
+
+        <div class="perf-runway turbo-bar icon pAbsolute"></div>
+
+    </div>
+
+
+
+    <div id="sport" class="page">
+        <div class="gear pAbsolute" data-bind-value="{{ModelCurrentCar}}.gear"></div>
+        <div class="speed pAbsolute" data-bind-value="CarDisplay.delayValue({{ModelCurrentCar}}.display_speed_kmh, 0, 100)"></div>
+        <div class="rpmneedle"></div>
+        <div class="speedneedle"></div>
+        <div class="rpmneedle blurred"></div>
+        <div class="speedneedle blurred"></div>
+
+        <div class="fuelbar"></div>
+        <div class="fuellow-overlay pAbsolute"></div>
+        <div class="fuellow-overlay mult pAbsolute"></div>
+        <div class="time pAbsolute" data-bind-value="CarDisplay.convert.timeOfDayToTime({{ModelCurrentCar}})"></div>
+        <div class="date pAbsolute"></div>
+        <div class="geardeco pAbsolute">MS</div>
+        <div class="perfmode drift pAbsolute">TORQUE REAR</div>
+        <div class="perfmode track pAbsolute">PERFORMANCE</div>
+        <div class="perfmode dynamic pAbsolute">INDIVIDUAL</div>
+
+    </div>
+
+    <div id="performance" class="page">
+        <div class="rpm pAbsolute">
+            <div class="bar pAbsolute"></div>
+            <div class="needle pAbsolute"></div>
+        </div>
+        <div class="shift-up pAbsolute"></div>
+        <div class="shift pAbsolute"></div>
+        <div class="shift-label pAbsolute"></div>
+        <div class="gear pAbsolute" data-bind-value="{{ModelCurrentCar}}.gear"></div>
+        <div class="geardeco pAbsolute">MS</div>
+        <div class="speed pAbsolute" data-bind-value="CarDisplay.delayValue({{ModelCurrentCar}}.display_speed_kmh, 0, 100)"></div>
+        <div class="perfmode drift pAbsolute">TORQUE REAR</div>
+        <div class="perfmode track pAbsolute">PERFORMANCE</div>
+        <div class="perfmode dynamic pAbsolute">INDIVIDUAL</div>
+    </div>
+
+    <div id="runway" class="page">
+        <div class="rpm pAbsolute">
+            <div class="bar pAbsolute"></div>
+        </div>
+        <div class="shift-up pAbsolute"></div>
+        <div class="shift pAbsolute"></div>
+        <div class="gear pAbsolute" data-bind-value="{{ModelCurrentCar}}.gear"></div>
+        <div class="geardeco pAbsolute">MS</div>
+        <div class="speed pAbsolute" data-bind-value="CarDisplay.delayValue({{ModelCurrentCar}}.display_speed_kmh, 0, 100)"></div>
+        <div class="perfmode drift pAbsolute">TORQUE REAR</div>
+        <div class="perfmode track pAbsolute">PERFORMANCE</div>
+        <div class="perfmode dynamic pAbsolute">INDIVIDUAL</div>
+    </div>
+
+
+    <div id="startup">
+    </div>
+
+</body>
+
+</html>

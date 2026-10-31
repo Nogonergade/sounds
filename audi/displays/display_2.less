@@ -1,0 +1,75 @@
+// out: "display_2.css"
+@import url(common.less);
+
+body {
+    color: #fff;
+    font-size: 39px;
+    font-family: @mainFont;
+}
+
+&[data-mode=startup] {
+    #common {
+        visibility: hidden;
+        opacity: 0 !important;
+    }
+}
+
+&[data-mode=on] {
+    #common {
+        opacity: 1 !important;
+    }
+}
+
+#common {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/bgr_display2.texture);
+    background-repeat: no-repeat;
+    transition: opacity 0.25s;
+}
+
+#time {
+	position: absolute;
+	top: 59px;
+	right: 80px;
+	width: 150px;
+	text-align: right;
+}
+
+&[data-mode=dynamic] {
+    #mode {
+        top: 303px;
+        background-position-y: 0px;
+    }
+}
+
+&[data-mode=track] {
+    #mode {
+        top: 443px;
+        background-position-y: -140px;
+    }
+}
+
+&[data-mode=drift] {
+    #mode {
+        top: 817px;
+        background-position-y: -282px;
+    }
+}
+
+#ac {
+    position: absolute;
+    left: 3px;
+    top: 1856px;
+    width: 1023px;
+    height: 196px;
+}
+
+#mode {
+    left: 1570px;
+    width: 415px;
+    height: 140px;
+    background-image: url(images/icons_2.texture);
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+}

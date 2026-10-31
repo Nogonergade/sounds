@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src='../../common_assets/displays/js/cohtml.js'></script>
+    <script src='../../common_assets/displays/js/displays.js'></script>
+
+    <link rel='stylesheet' type='text/css' href='../../common_assets/displays/css/common.css'>
+    <link rel='stylesheet' type='text/css' href='display_2.css'>
+
+    <script src='display_2.js'></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body class="cardisplay"
+    data-page="off"
+    data-bind-car="CarDisplay.process({{ModelCurrentCar}})">
+
+    <div id="common" class="page">
+        <div id="time" class="gauge" data-bind-value="CarDisplay.convert.timeOfDayToTime({{ModelCurrentCar}})">13:10</div>
+        <div id="mode" class="pAbsolute"></div>
+    </div>
+
+    <div id="ac" class="page"></div>
+
+</body>
+
+</html>
