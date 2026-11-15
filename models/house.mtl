@@ -1,0 +1,191 @@
+newmtl stucco
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/stucco.png
+
+newmtl plaster
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/plaster.png
+
+newmtl charcoal
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/charcoal.png
+
+newmtl frame
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/frame.png
+
+newmtl oak
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/oak.png
+
+newmtl walnut
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/walnut.png
+
+newmtl stone
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/stone.png
+
+newmtl tile
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/tile.png
+
+newmtl fabric
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/fabric.png
+
+newmtl linen
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/linen.png
+
+newmtl sage
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/sage.png
+
+newmtl clay
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/clay.png
+
+newmtl metal
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.4 0.4 0.4
+Ns 48
+d 1
+map_Kd ../textures/metal.png
+
+newmtl brass
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.4 0.4 0.4
+Ns 48
+d 1
+map_Kd ../textures/brass.png
+
+newmtl ceramic
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/ceramic.png
+
+newmtl glass
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.4 0.4 0.4
+Ns 48
+d 0.22
+map_Kd ../textures/glass.png
+
+newmtl water
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 0.68
+map_Kd ../textures/water.png
+
+newmtl grass
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/grass.png
+
+newmtl foliage
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/foliage.png
+
+newmtl soil
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/soil.png
+
+newmtl glow
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/glow.png
+
+newmtl screen
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/screen.png
+
+newmtl bookred
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/bookred.png
+
+newmtl bookblue
+Ka 0.15 0.15 0.15
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+Ns 48
+d 1
+map_Kd ../textures/bookblue.png

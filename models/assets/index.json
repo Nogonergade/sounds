@@ -1,0 +1,839 @@
+[
+  {
+    "name": "art_dining",
+    "origin": [
+      245.575,
+      317.0,
+      58.5
+    ],
+    "triangles": 48
+  },
+  {
+    "name": "art_master",
+    "origin": [
+      85.0,
+      225.425,
+      199.5
+    ],
+    "triangles": 48
+  },
+  {
+    "name": "barbecue",
+    "origin": [
+      493.0,
+      211.75,
+      -7.0
+    ],
+    "triangles": 332
+  },
+  {
+    "name": "bed_bedroom3",
+    "origin": [
+      366.0,
+      432.0,
+      145.0
+    ],
+    "triangles": 808
+  },
+  {
+    "name": "bed_bedroom4",
+    "origin": [
+      366.0,
+      594.0,
+      145.0
+    ],
+    "triangles": 808
+  },
+  {
+    "name": "bed_ground",
+    "origin": [
+      350.0,
+      60.0,
+      1.0
+    ],
+    "triangles": 808
+  },
+  {
+    "name": "bed_master",
+    "origin": [
+      82.0,
+      276.0,
+      145.0
+    ],
+    "triangles": 808
+  },
+  {
+    "name": "boiler",
+    "origin": [
+      484.0,
+      336.0,
+      8.0
+    ],
+    "triangles": 212
+  },
+  {
+    "name": "coffee_table",
+    "origin": [
+      146.0,
+      105.0,
+      1.0
+    ],
+    "triangles": 300
+  },
+  {
+    "name": "desk_3",
+    "origin": [
+      382.0,
+      340.0,
+      145.0
+    ],
+    "triangles": 300
+  },
+  {
+    "name": "desk_4",
+    "origin": [
+      382.0,
+      500.0,
+      145.0
+    ],
+    "triangles": 300
+  },
+  {
+    "name": "desk_chair_3",
+    "origin": [
+      400.0,
+      347.0,
+      144.0
+    ],
+    "triangles": 360
+  },
+  {
+    "name": "desk_chair_4",
+    "origin": [
+      400.0,
+      507.0,
+      144.0
+    ],
+    "triangles": 360
+  },
+  {
+    "name": "desk_laptop_3",
+    "origin": [
+      382.0,
+      340.0,
+      175.5
+    ],
+    "triangles": 120
+  },
+  {
+    "name": "desk_laptop_4",
+    "origin": [
+      382.0,
+      500.0,
+      175.5
+    ],
+    "triangles": 120
+  },
+  {
+    "name": "dining_chair_0",
+    "origin": [
+      80.0,
+      269.0,
+      0.0
+    ],
+    "triangles": 360
+  },
+  {
+    "name": "dining_chair_1",
+    "origin": [
+      113.0,
+      269.0,
+      0.0
+    ],
+    "triangles": 360
+  },
+  {
+    "name": "dining_chair_2",
+    "origin": [
+      146.0,
+      269.0,
+      0.0
+    ],
+    "triangles": 360
+  },
+  {
+    "name": "dining_chair_3",
+    "origin": [
+      80.0,
+      347.0,
+      0.0
+    ],
+    "triangles": 360
+  },
+  {
+    "name": "dining_chair_4",
+    "origin": [
+      113.0,
+      347.0,
+      0.0
+    ],
+    "triangles": 360
+  },
+  {
+    "name": "dining_chair_5",
+    "origin": [
+      146.0,
+      347.0,
+      0.0
+    ],
+    "triangles": 360
+  },
+  {
+    "name": "dining_pendant",
+    "origin": [
+      112.0,
+      308.0,
+      81.75
+    ],
+    "triangles": 1140
+  },
+  {
+    "name": "dining_table",
+    "origin": [
+      113.0,
+      308.0,
+      1.0
+    ],
+    "triangles": 300
+  },
+  {
+    "name": "door_01",
+    "origin": [
+      215.0,
+      640.0,
+      -1.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_02",
+    "origin": [
+      293.0,
+      560.0,
+      -1.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_03",
+    "origin": [
+      336.0,
+      493.0,
+      -1.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_04",
+    "origin": [
+      488.0,
+      680.0,
+      -1.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_05",
+    "origin": [
+      591.0,
+      420.0,
+      -1.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_06",
+    "origin": [
+      250.0,
+      139.0,
+      -1.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_07",
+    "origin": [
+      160.0,
+      479.0,
+      -1.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_08",
+    "origin": [
+      336.0,
+      369.0,
+      -1.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_09",
+    "origin": [
+      487.0,
+      420.0,
+      -1.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_10",
+    "origin": [
+      448.0,
+      375.0,
+      143.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_11",
+    "origin": [
+      448.0,
+      555.0,
+      143.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_12",
+    "origin": [
+      176.0,
+      307.0,
+      143.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_13",
+    "origin": [
+      176.0,
+      521.0,
+      143.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_14",
+    "origin": [
+      137.0,
+      380.0,
+      143.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_15",
+    "origin": [
+      117.0,
+      490.0,
+      143.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_16",
+    "origin": [
+      256.0,
+      369.0,
+      143.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_17",
+    "origin": [
+      256.0,
+      521.0,
+      143.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "door_18",
+    "origin": [
+      215.0,
+      552.0,
+      143.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "dressing_south",
+    "origin": [
+      102.0,
+      621.45,
+      144.0
+    ],
+    "triangles": 612
+  },
+  {
+    "name": "dressing_west",
+    "origin": [
+      24.0,
+      571.45,
+      144.0
+    ],
+    "triangles": 252
+  },
+  {
+    "name": "family_bookcase",
+    "origin": [
+      347.0,
+      17.0,
+      144.0
+    ],
+    "triangles": 2196
+  },
+  {
+    "name": "family_chair_0",
+    "origin": [
+      317.0,
+      54.0,
+      144.0
+    ],
+    "triangles": 360
+  },
+  {
+    "name": "family_chair_1",
+    "origin": [
+      346.0,
+      54.0,
+      144.0
+    ],
+    "triangles": 360
+  },
+  {
+    "name": "family_chair_2",
+    "origin": [
+      375.0,
+      54.0,
+      144.0
+    ],
+    "triangles": 360
+  },
+  {
+    "name": "family_chair_3",
+    "origin": [
+      317.0,
+      126.0,
+      144.0
+    ],
+    "triangles": 360
+  },
+  {
+    "name": "family_chair_4",
+    "origin": [
+      346.0,
+      126.0,
+      144.0
+    ],
+    "triangles": 360
+  },
+  {
+    "name": "family_chair_5",
+    "origin": [
+      375.0,
+      126.0,
+      144.0
+    ],
+    "triangles": 360
+  },
+  {
+    "name": "family_planter",
+    "origin": [
+      423.04095,
+      149.91840000000002,
+      144.0
+    ],
+    "triangles": 1104
+  },
+  {
+    "name": "family_table",
+    "origin": [
+      345.0,
+      90.0,
+      145.0
+    ],
+    "triangles": 300
+  },
+  {
+    "name": "garden_chair",
+    "origin": [
+      676.0,
+      163.25,
+      -12.0
+    ],
+    "triangles": 960
+  },
+  {
+    "name": "garden_coffee",
+    "origin": [
+      675.0,
+      111.0,
+      -11.0
+    ],
+    "triangles": 300
+  },
+  {
+    "name": "garden_picnic_table",
+    "origin": [
+      592.0,
+      224.0,
+      -11.0
+    ],
+    "triangles": 300
+  },
+  {
+    "name": "garden_sofa",
+    "origin": [
+      654.5,
+      55.0,
+      -12.0
+    ],
+    "triangles": 960
+  },
+  {
+    "name": "garden_umbrella",
+    "origin": [
+      689.0,
+      105.0,
+      -12.0
+    ],
+    "triangles": 166
+  },
+  {
+    "name": "ground_bath_basin",
+    "origin": [
+      371.0,
+      340.025,
+      33.0
+    ],
+    "triangles": 204
+  },
+  {
+    "name": "ground_bath_shower",
+    "origin": [
+      368.25,
+      396.0,
+      0.0
+    ],
+    "triangles": 132
+  },
+  {
+    "name": "ground_bath_toilet",
+    "origin": [
+      418.0,
+      352.75,
+      0.0
+    ],
+    "triangles": 180
+  },
+  {
+    "name": "ground_bath_vanity",
+    "origin": [
+      371.0,
+      342.45,
+      0.0
+    ],
+    "triangles": 372
+  },
+  {
+    "name": "ground_wardrobe",
+    "origin": [
+      429.0,
+      117.45,
+      0.0
+    ],
+    "triangles": 372
+  },
+  {
+    "name": "kitchen_hob",
+    "origin": [
+      43.5,
+      621.5,
+      37.0
+    ],
+    "triangles": 316
+  },
+  {
+    "name": "kitchen_island",
+    "origin": [
+      90.0,
+      530.45,
+      0.0
+    ],
+    "triangles": 252
+  },
+  {
+    "name": "kitchen_sink",
+    "origin": [
+      113.5,
+      623.1,
+      36.5
+    ],
+    "triangles": 112
+  },
+  {
+    "name": "kitchen_south",
+    "origin": [
+      80.0,
+      620.45,
+      0.0
+    ],
+    "triangles": 732
+  },
+  {
+    "name": "kitchen_west",
+    "origin": [
+      19.0,
+      551.45,
+      0.0
+    ],
+    "triangles": 252
+  },
+  {
+    "name": "living_planter",
+    "origin": [
+      222.04605,
+      29.90825,
+      0.0
+    ],
+    "triangles": 1104
+  },
+  {
+    "name": "living_rug",
+    "origin": [
+      138.5,
+      106.0,
+      0.16000000000000003
+    ],
+    "triangles": 12
+  },
+  {
+    "name": "lounge_chair",
+    "origin": [
+      180.0,
+      39.25,
+      0.0
+    ],
+    "triangles": 960
+  },
+  {
+    "name": "master_bath_basin",
+    "origin": [
+      37.0,
+      402.025,
+      177.0
+    ],
+    "triangles": 204
+  },
+  {
+    "name": "master_bath_bathtub",
+    "origin": [
+      39.0,
+      463.0,
+      144.0
+    ],
+    "triangles": 360
+  },
+  {
+    "name": "master_bath_toilet",
+    "origin": [
+      140.0,
+      461.75,
+      144.0
+    ],
+    "triangles": 180
+  },
+  {
+    "name": "master_bath_vanity",
+    "origin": [
+      37.0,
+      404.45,
+      144.0
+    ],
+    "triangles": 372
+  },
+  {
+    "name": "master_dresser",
+    "origin": [
+      26.0,
+      349.45,
+      144.0
+    ],
+    "triangles": 372
+  },
+  {
+    "name": "media_console",
+    "origin": [
+      235.5,
+      56.0,
+      5.0
+    ],
+    "triangles": 36
+  },
+  {
+    "name": "outdoor_planter_-60_734",
+    "origin": [
+      -59.9386,
+      733.87765,
+      -12.0
+    ],
+    "triangles": 1104
+  },
+  {
+    "name": "outdoor_planter_-62_-62",
+    "origin": [
+      -61.9386,
+      -62.12235000000001,
+      -12.0
+    ],
+    "triangles": 1104
+  },
+  {
+    "name": "outdoor_planter_690_-73",
+    "origin": [
+      690.0614,
+      -73.12235000000001,
+      -12.0
+    ],
+    "triangles": 1104
+  },
+  {
+    "name": "outdoor_planter_695_302",
+    "origin": [
+      695.0614,
+      301.87765,
+      -12.0
+    ],
+    "triangles": 1104
+  },
+  {
+    "name": "outdoor_planter_695_744",
+    "origin": [
+      695.0614,
+      743.87765,
+      -12.0
+    ],
+    "triangles": 1104
+  },
+  {
+    "name": "pantry_shelving",
+    "origin": [
+      580.0,
+      335.0,
+      0.0
+    ],
+    "triangles": 2196
+  },
+  {
+    "name": "picnic_bench_189",
+    "origin": [
+      592.0,
+      189.0,
+      -11.0
+    ],
+    "triangles": 300
+  },
+  {
+    "name": "picnic_bench_259",
+    "origin": [
+      592.0,
+      259.0,
+      -11.0
+    ],
+    "triangles": 300
+  },
+  {
+    "name": "shared_bath_toilet",
+    "origin": [
+      215.5,
+      618.5,
+      144.0
+    ],
+    "triangles": 264
+  },
+  {
+    "name": "shared_bath_vanity",
+    "origin": [
+      197.0,
+      622.45,
+      144.0
+    ],
+    "triangles": 252
+  },
+  {
+    "name": "sofa_living",
+    "origin": [
+      61.5,
+      88.0,
+      0.0
+    ],
+    "triangles": 960
+  },
+  {
+    "name": "terrace_armchair",
+    "origin": [
+      589.5,
+      483.0,
+      144.0
+    ],
+    "triangles": 960
+  },
+  {
+    "name": "terrace_planter",
+    "origin": [
+      614.0512,
+      361.898,
+      144.0
+    ],
+    "triangles": 1104
+  },
+  {
+    "name": "terrace_sofa",
+    "origin": [
+      557.0,
+      610.25,
+      144.0
+    ],
+    "triangles": 960
+  },
+  {
+    "name": "terrace_table",
+    "origin": [
+      556.0,
+      557.0,
+      145.0
+    ],
+    "triangles": 300
+  },
+  {
+    "name": "utility_laundry",
+    "origin": [
+      205.0,
+      437.5,
+      0.0
+    ],
+    "triangles": 180
+  },
+  {
+    "name": "utility_storage",
+    "origin": [
+      234.0,
+      562.45,
+      0.0
+    ],
+    "triangles": 252
+  }
+]
